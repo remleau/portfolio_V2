@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-		<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+		<link href="{{ asset('css/main.css') }}" rel="stylesheet">
 
 		<!-- JS -->
 		<script src="{{ asset('js/app.js') }}"></script>

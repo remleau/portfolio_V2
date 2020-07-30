@@ -1,0 +1,111 @@
+// @font-face {
+//     font-family: 'SF Pro Display';
+//     src: url(../fonts/.woff2') format('woff2'),
+//         url(../fonts/.woff') format('woff');
+//     font-weight: bold;
+//     font-style: italic;
+// }
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-Medium.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-Bold.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-LightItalic.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-LightItalic.woff) format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-RegularItalic.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-RegularItalic.woff) format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-MediumItalic.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-MediumItalic.woff) format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-Regular.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-SemiboldItalic.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-SemiboldItalic.woff) format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-Semibold.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-Semibold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/SFProDisplay-Light.woff2) format('woff2'),
+        url(../fonts/SFProDisplay-Light.woff) format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1 {
+    @apply font-serif font-semibold text-darkGrey;
+    font-size: 1.75rem;
+
+    @screen lg {
+        font-size: 3.5rem;
+    }
+}
+
+h2 {
+    @apply font-serif font-normal text-darkGrey;
+    font-size: 1.5rem;
+
+    @screen lg {
+        font-size: 2.75rem;
+    }
+}
+
+h3 {
+    @apply font-sans font-medium text-darkGrey;
+    font-size: 2.25rem;
+}
+
+h4 {
+    @apply font-sans font-normal text-darkGrey;
+    font-size: 1.75rem;
+}
+
+p {
+    // @apply font-medium;
+}

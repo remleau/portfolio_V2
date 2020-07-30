@@ -1,0 +1,134 @@
+footer {
+	@apply bg-darkGrey;
+
+	@screen lg {
+		@apply sticky bottom-0 left-0;
+	}
+
+	.upper {
+		@apply bg-white relative;
+		z-index: 9;
+
+		.newsletter {
+			@apply p-6;
+
+			@screen lg {
+				@apply py-6 px-16 pr-32;
+			}
+		}
+
+		form {
+			@apply border-t border-lightGrey;
+
+			@screen lg {
+				@apply flex justify-between items-center;
+			}
+
+			label {
+				@apply pr-10 mr-6;
+				@screen lg {
+					@apply border-r border-lightGrey text-darkGrey;
+				}
+			}
+
+			input {
+				@apply my-4;
+			}
+			
+			> div {
+				@screen lg {
+					@apply flex items-center;
+				}
+
+				> * {
+					@apply block;
+				}
+			}
+
+			.response {
+				@apply pb-4 whitespace-no-wrap text-sm italic;
+
+				@screen lg {
+					@apply pl-4 pb-0;
+				}
+			}
+		}
+	}
+
+	.lower {
+		@apply w-full text-sm;
+		color: rgba(#fff, 0.4);
+
+		.inner {
+			@apply py-6;
+
+			@screen lg {
+				@apply py-0;
+			}
+			
+			> a,
+			> div {
+				@screen lg {
+					@apply py-12;
+				}
+
+				@apply border-b-2;
+				border-color: lighten(#262729,3%);
+				&:nth-last-child(-n+1) {
+					border:none;
+				}
+			}
+		}
+
+		.logo{
+			@apply py-4;
+		}
+
+		.infos {
+			> div {
+				@apply py-4;
+			}
+
+			.contact {
+				@screen lg {
+					border: none;
+				}
+
+				@apply border-b-2 border-t-2;
+				border-color: lighten(#262729,3%);
+			}
+		}
+
+
+		.links {
+			@apply relative block z-0;
+
+			@screen lg {
+				@apply flex;
+			}
+
+			a {
+				@apply relative w-full h-40 flex items-center justify-center text-xl text-white;
+
+				background-size: cover;
+				background-position: center;
+			}
+		}
+
+		.copyright{
+			> div {
+				a {
+					@apply block py-1 pr-8;
+
+					@screen lg {
+						@apply inline-block py-0;
+					}
+
+					&:last-child {
+						@apply pr-0;
+					}
+				}
+			}
+		}
+	}
+}

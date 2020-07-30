@@ -1,0 +1,20 @@
+.block__slider {
+  @apply relative overflow-hidden;
+
+  .swiper-container {
+    @apply h-full flex items-center justify-center;
+  }
+
+  .swiper-wrapper {
+    @apply items-center h-full;
+  }
+
+  .swiper-slide {
+    @apply w-full flex items-center justify-center h-full overflow-hidden;
+  }
+
+}
+
+.block__slider-homepage {
+    @apply h-screen w-full;
+}

@@ -1,0 +1,23 @@
+body {
+	@apply overflow-x-hidden;
+}
+
+.wrap {
+	@apply relative bg-white z-10;
+}
+
+.circle-mouse {
+	@apply duration-200 transition-opacity;
+	opacity: 0;
+	position: absolute;
+	background: transparent;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 3px solid theme('colors.redHover');
+	z-index: 0;
+
+	&.moving {
+		opacity: .3;
+	}
+}
