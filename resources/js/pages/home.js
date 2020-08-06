@@ -1,5 +1,7 @@
-import Swiper from 'swiper';
+import Swiper, { Pagination } from 'swiper';
 import 'swiper/swiper-bundle.css';
+
+Swiper.use([Pagination]);
 
 export const home = () => {
 
@@ -12,12 +14,9 @@ export const home = () => {
 				this.update(true);
 			},
 		},
-		navigation: {
-			nextEl: '.block__slider-homepage .swiper-button-next',
-			prevEl: '.block__slider-homepage .swiper-button-prev',
-		},
 		pagination: {
 			el: '.block__slider-homepage .swiper-pagination',
+			type: 'fraction',
 			clickable: true,
 		},
 		speed: 750,

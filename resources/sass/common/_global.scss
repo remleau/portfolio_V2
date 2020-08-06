@@ -2,8 +2,8 @@ body {
 	@apply overflow-x-hidden;
 }
 
-.wrap {
-	@apply relative bg-white z-10;
+.wrapper {
+	@apply w-11/12;
 }
 
 .circle-mouse {
@@ -15,9 +15,18 @@ body {
 	height: 75px;
 	border-radius: 50%;
 	border: 3px solid theme('colors.redHover');
-	z-index: 0;
-
+	z-index: 1000;
+	pointer-events: none;
+			
 	&.moving {
 		opacity: .3;
+	}
+}
+
+.overlay {
+	@apply absolute h-full w-full top-0 left-0;
+
+	&.lightGrey {
+		background-color: rgba(#DFE6E9,0.3);
 	}
 }
