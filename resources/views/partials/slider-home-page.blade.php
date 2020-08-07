@@ -28,8 +28,10 @@
 				<div class="swiper-slide" data-color="" style="background-image: url({{ $slide['image']['link'] }})">
 					<div class="overlay lightGrey"></div>
 					<div class="content wrapper">
-						<h2>{{ $slide['title'] }}</h2>
-						<p>{{ $slide['description'] }}</p>
+						<p class="sub-line">Dolor sit amet bro</p>
+						<h2 clas="project-title">{{ $slide['title'] }}</h2>
+						<p class="project-description">{{ $slide['description'] }}</p>
+						<a href="{{ $slide['link'] }}" class="project-link">Voir le projet ></a>
 					</div>
 				</div>
 			@endforeach

@@ -27,6 +27,6 @@ body {
 	@apply absolute h-full w-full top-0 left-0;
 
 	&.lightGrey {
-		background-color: rgba(#DFE6E9,0.3);
+		background: linear-gradient(180deg, rgba(245,245,245,0) 40%, rgba(38,39,41,1) 100%);
 	}
 }

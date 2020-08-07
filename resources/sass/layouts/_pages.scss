@@ -1,6 +1,11 @@
 .page {
-	&__accueil,
 	&__home {
+
+		header{
+			h1 {
+				@apply text-lightGrey;
+			}
+		}
 
 	}
 }

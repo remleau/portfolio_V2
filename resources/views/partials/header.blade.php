@@ -1,6 +1,14 @@
 <header>
 	<div class="wrapper">
-		<h1>Remleau</h1>
+		<div class="main-menu">
+			<a href="/" class="logo">
+				<span>Remleau</span>
+			</a>
+			<ul>
+				<li><a>Projets</a></li>
+				<li><a>Contact</a></li>
+			</ul>
+		</div>
 	</div>
 </header>
 

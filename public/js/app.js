@@ -36118,15 +36118,18 @@ var global = function global() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "home", function() { return home; });
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/swiper-bundle.css */ "./node_modules/swiper/swiper-bundle.css");
-/* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! swiper/swiper-bundle.css */ "./node_modules/swiper/swiper-bundle.css");
+/* harmony import */ var swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_bundle_css__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__["Pagination"]]);
 var home = function home() {
   var swiperHome = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.block__slider-homepage .swiper-container', {
-    slidesPerView: 1,
     direction: 'horizontal',
+    slidesPerView: 'auto',
+    centeredSlides: true,
     loop: true,
     on: {
       init: function init() {
@@ -36144,6 +36147,20 @@ var home = function home() {
       disableOnInteraction: false
     }
   });
+  document.querySelector('.block__slider-homepage').addEventListener('mousemove', function (e) {
+    parallaxIt(e, ".swiper-slide", -100);
+    parallaxIt(e, ".swiper-slide .content", -30);
+  });
+
+  function parallaxIt(e, target, movement) {
+    var $this = document.querySelector(".swiper-slide");
+    var relX = e.pageX - $this.offsetLeft;
+    var relY = e.pageY - $this.offsetTop;
+    gsap__WEBPACK_IMPORTED_MODULE_1__["TweenMax"].to(target, 1, {
+      x: (relX - $this.getBoundingClientRect().width / 2) / $this.getBoundingClientRect().width * movement,
+      y: (relY - $this.getBoundingClientRect().height / 2) / $this.getBoundingClientRect().height * movement
+    });
+  }
 };
 
 /***/ }),

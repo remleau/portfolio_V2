@@ -3,7 +3,7 @@
 
   @include('partials.head')
 
-  <body>
+  <body class="page__{{ $body_class ? $body_class : '' }}">
 
     @include('partials.header')
 

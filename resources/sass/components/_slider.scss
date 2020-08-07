@@ -22,8 +22,54 @@
 }
 
 .block__slider-homepage {
-  @apply h-screen w-full;
+  @apply h-screen w-full overflow-hidden;
 
   .swiper-slide {
+    height: 110%;
+    width: 110%;
+
+    .content {
+      width: 81.666667%;
+
+      p {
+        @apply text-white;
+      }
+      
+      h2 {
+        @apply text-white pb-1;
+      }
+
+      .sub-line {
+        @apply text-sm uppercase;
+      }
+
+      .project-description {
+        @apply w-1/2;
+      }
+
+      .project-link {
+        @apply block text-white text-sm mt-6;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    width: inherit;
+    left: inherit;
+    right: 4.1666665%;
+    bottom: 2rem;
+    color: #cccccc;
+
+    span {
+      @apply font-medium px-1;
+    }
+
+    .swiper-pagination-current {
+      @apply text-2xl text-white;
+    }
+
+    .swiper-pagination-total {
+      @apply pr-0;
+    }
   }
 }

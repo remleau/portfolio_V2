@@ -13,6 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home', ['page_title' => 'THIS IS HOME']);
-});
+Route::get('/', 'HomeController@index');        

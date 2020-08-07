@@ -15,33 +15,14 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
-      purple: '#9C1FF2',
-      blue: '#055CF5',
-      pink: '#EF5C9D',
-      green: '#4FCBA6',
-      orange: '#FF4600',
-
-      lightRed: '#FFEFEC',
-      red: '#EE1948',
-      redHover: '#B40021',
-
       noir: '#0D0D0D',
       darkGrey: '#262729',
 
       mediumGrey: '#68686A',
       mediumGreyHover: '#818184',
       
-      lightGrey: '#D2D2D2',
+      lightGrey: '#dfe4ea',
       lightGreyHover: '#D3D3D3',
-
-      lighterGrey: '#F5F5F5',
-
-      page: '#FBFBFB',
-      table: '#D2D2D21A',
-
-      lightBlue: 'rgba(5, 92, 245, 0.03)',
-
-      credit: '#26272966',
 
     },
     spacing: {
@@ -145,8 +126,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Nunito Sans',
-        // 'SF Pro Display',
+        'Ubuntu',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
