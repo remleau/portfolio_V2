@@ -2,7 +2,7 @@ header {
 	@apply fixed w-full flex items-center justify-center z-10;
 
 	.wrapper {
-		@apply pt-8;
+		@apply py-8;
 	}
 
 	.logo {
@@ -22,7 +22,11 @@ header {
 
 				&:first-child {
 					@apply pl-0;
-				}
+        }
+        
+        a {
+          color: rgba(#fff, 0.6);
+        }
 			}
 		}
 	}

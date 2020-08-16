@@ -15,7 +15,7 @@
 			'image' => [
 				'link' => 'https://images.unsplash.com/photo-1484910292437-025e5d13ce87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3788&q=80'
 			]
-		],
+		]
 	];
 ?>
 
@@ -25,14 +25,19 @@
 		
 		<div class="swiper-wrapper">
 			@foreach($slides as $key => $slide)
-				<div class="swiper-slide" data-color="" style="background-image: url({{ $slide['image']['link'] }})">
-					<div class="overlay lightGrey"></div>
+				<div class="swiper-slide">
+
+          <div class="image" style="background-image: url({{ $slide['image']['link'] }})">
+            <div class="overlay darkBlack"></div>
+          </div>
+
 					<div class="content wrapper">
 						<p class="sub-line">Dolor sit amet bro</p>
 						<h2 clas="project-title">{{ $slide['title'] }}</h2>
 						<p class="project-description">{{ $slide['description'] }}</p>
 						<a href="{{ $slide['link'] }}" class="project-link">Voir le projet ></a>
 					</div>
+
 				</div>
 			@endforeach
 		</div>

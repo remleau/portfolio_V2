@@ -14,7 +14,7 @@ body {
 	width: 75px;
 	height: 75px;
 	border-radius: 50%;
-	border: 3px solid theme('colors.redHover');
+	border: 3px solid theme('colors.darkGrey');
 	z-index: 1000;
 	pointer-events: none;
 			
@@ -28,5 +28,9 @@ body {
 
 	&.lightGrey {
 		background: linear-gradient(180deg, rgba(245,245,245,0) 40%, rgba(38,39,41,1) 100%);
-	}
+  }
+  
+  &.darkBlack {
+    background-color: rgba(#000, 0.9);
+  }
 }

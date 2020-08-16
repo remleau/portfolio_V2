@@ -733,7 +733,7 @@ body {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  border: 3px solid ;
+  border: 3px solid #262729;
   z-index: 1000;
   pointer-events: none;
 }
@@ -754,6 +754,10 @@ body {
   background: linear-gradient(180deg, rgba(245, 245, 245, 0) 40%, #262729 100%);
 }
 
+.overlay.darkBlack {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 h1 {
   font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 600;
@@ -765,7 +769,7 @@ h1 {
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -835,18 +839,52 @@ h4 {
 }
 
 .block__slider-homepage {
+  --bg-opacity: 1;
+  background-color: #0D0D0D;
+  background-color: rgba(13, 13, 13, var(--bg-opacity));
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.block__slider-homepage .swiper-slide-duplicate-next,
+.block__slider-homepage .swiper-slide-duplicate-active,
+.block__slider-homepage .swiper-slide-prev {
+  opacity: 0;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: opacity;
+  transition-duration: 300ms;
 }
 
 .block__slider-homepage .swiper-slide {
-  height: 110%;
-  width: 110%;
+  justify-content: flex-start;
+}
+
+.block__slider-homepage .swiper-slide .image {
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 70%;
+  width: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+.block__slider-homepage .swiper-slide .image .overlay {
+  opacity: 0.5;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: opacity;
+  transition-duration: 300ms;
 }
 
 .block__slider-homepage .swiper-slide .content {
-  width: 81.666667%;
+  opacity: 0;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  width: 75%;
 }
 
 .block__slider-homepage .swiper-slide .content p {
@@ -860,6 +898,7 @@ h4 {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   padding-bottom: 0.25rem;
+  font-size: 3.5rem;
 }
 
 .block__slider-homepage .swiper-slide .content .sub-line {
@@ -868,7 +907,7 @@ h4 {
 }
 
 .block__slider-homepage .swiper-slide .content .project-description {
-  width: 50%;
+  width: 75%;
 }
 
 .block__slider-homepage .swiper-slide .content .project-link {
@@ -880,12 +919,26 @@ h4 {
   margin-top: 1.5rem;
 }
 
+.block__slider-homepage .swiper-slide-next .image {
+  left: 0;
+  right: inherit;
+  margin-left: 10%;
+}
+
+.block__slider-homepage .swiper-slide-active .image .overlay {
+  opacity: 0;
+}
+
+.block__slider-homepage .swiper-slide-active .content {
+  opacity: 1;
+}
+
 .block__slider-homepage .swiper-pagination {
   width: inherit;
   left: inherit;
   right: 4.1666665%;
   bottom: 2rem;
-  color: #cccccc;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .block__slider-homepage .swiper-pagination span {
@@ -916,6 +969,7 @@ header {
 
 header .wrapper {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 header .logo span {
@@ -943,6 +997,10 @@ header .main-menu ul li {
 
 header .main-menu ul li:first-child {
   padding-left: 0;
+}
+
+header .main-menu ul li a {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 footer {
