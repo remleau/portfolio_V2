@@ -21,7 +21,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "gsap": "^3.4.2",
+        "gsap": "^3.6.0",
         "swiper": "^6.0.4",
         "tailwindcss": "^1.6.0"
     }
