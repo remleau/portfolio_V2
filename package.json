@@ -22,7 +22,7 @@
     },
     "dependencies": {
         "gsap": "^3.4.2",
-        "swiper": "^6.0.4",
+        "swiper": "^6.5.1",
         "tailwindcss": "^1.6.0"
     }
 }
